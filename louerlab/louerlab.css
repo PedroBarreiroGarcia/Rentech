@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*estilo adicionado no menu ao rolar*/
+#menu.ativo{
+    background-color: #d9d9d9;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+/*estilo adicionado ao toggle*/
+.remove{
+    display: none;
+}
+
+.add{
+    display: block;
+}
+
+/*estilo do menu*/
+#menu{
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+.listamenu{
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.listamenu img{
+    width: fit-content;
+    height: 100px;
+}
+
+.listamenu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.lista_centro{
+    align-items: center;
+    font-size: 25px;
+}
+
+.lista_centro a{
+    text-decoration: none;
+}
+
+.lista_centro li{
+    color: #141274;
+    margin: 0 5px;
+    padding: 2px 15px;
+}
+
+.lista_direita{
+    align-items: center;
+}
+
+.lista_direita a{
+    display: flex;
+    text-decoration: none;
+}
+
+.lista_direita button{
+    font-size: 22px;
+    background-color: transparent;
+    width: 100px;
+    margin-right: 15px;
+    color: #141274;
+    border: 0px;
+    cursor: pointer;
+}
+
+.lista_direita li{
+    padding: 10px;
+}
+
+.lista_direita img{
+    width: 30px;
+}
+body{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.LouerLab{
+    width: 100%;
+    height: auto; 
+    margin: auto;
+    /* background-image: url(../lourlab/img_2°UC/tentando1.jpg);
+     background-size: cover; */
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+.quemSomos{
+    width:100%;
+    height: 600px;
+    background-image: url(../assets/imgFundo.jpg);
+     background-size: cover; 
+}
+
+#textPrincipal{
+    font-size: 70px;
+    color: rgba(255, 255, 255, .9);
+    text-align: right;
+    padding: 50px 0 30px 0;
+}
+
+.textoQuemSomos{
+    font-size: 30px;
+    color: rgba(255, 255, 255, .9);
+}
+
+.areaTexto{
+    position: relative;
+    float: right;
+    width: 40%;
+    height: auto;
+    text-align: center;
+}
+
+.historia{
+    width: 100%;
+    height: 330px;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    padding: 70px;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.titHistoria{
+    font-size: 70px;
+}
+
+.textHistoria{
+    font-size: 25px;
+}
+
+.sessaoProposito{
+    width: 100%;
+    height: 617px;
+    background-image: url(../assets/fundoMissaoAzul.jpg);
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.textoMaiorProposito{
+    font-size: 50px;
+    color: white;
+    padding: 10px 0 10px 0;
+}
+
+.textoMenorProposito{
+    font-size: 30px;
+    color: white; 
+}
+
+.espacoIcone{
+    width: 50px;
+    height: 50px;
+    /* background-color: white; */
+    padding: 10px 0 50px 0;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#areaMapas{
+    width: 100%;
+    height: 308.5px;
+    display:flex;
+    flex-direction: row;
+}
+
+.textoMaps{
+    width: 50%;
+    height: 308.5px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.titMaps{
+    font-size: 40px;
+    padding: 30px;
+}
+
+.textMaps{
+    font-size: 30px;
+}
+
+.mapa{
+    width: 50%;
+    height: 308.5px;
+    box-sizing: border-box;
+}
+
+.parceiros{
+    width: 100%;
+    height: 308.5px;
+    display:flex;
+    flex-direction: row;
+}
+
+.imgParceiros{
+    width: 50%;
+    height: 308.5px;
+    background-image: url(../assets/imgParceirosSemEdicao.jpg);
+    background-size: cover;
+}
+
+.areaParceiros{
+    width: 50%;
+    height: 308.5px;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction:column;
+    float: left;
+}
+
+.textParceiros{
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.custom-btn {
+    width: 250px;
+    height: 40px;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  .btn-15 {
+    background: #63636A;
+    border: none;
+    z-index: 1;
+  }
+  .btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #3434ee;
+    border-radius: 50px;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn-15:hover {
+    color: #fff;
+  }
+  .btn-15:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-15:active {
+    top: 2px;
+  }
+
+.nossosParceiros{
+    width: 100%;
+    height: auto;
+}
+
+#areaTituloparceiros{
+    width: 100%;
+    height: 100px;
+    background-color: #63636A;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#textoBranco{
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.areaIcones{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.icones{
+    width: 60%;
+    height: 120px;
+    padding: 18px 0px ;
+    z-index: 5;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    display: flex;
+}
+
+#logoMarca{
+    width: 13%;
+    height: 110px;
+    padding: 6px;
+}
+
+#logoMarca:hover{
+    width: 15%;
+    height: 115px;
+    transition: 1s;
+}
+
+/*estilo do rodapé*/
+footer{
+    width: 100%;
+    height: 350px;
+    background-color: #63636A;
+}
+
+footer .conteudo_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #ffffff;
+    font-size: 20px;
+    width: 100%;
+    height: 310px;
+    padding: 20px 30px;
+}
+
+footer .divs_footer{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 100%;   
+}
+
+.divs_footer img{
+    width: 200px;
+    height: fit-content;
+}
+
+.divs_footer span{
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.divs_footer ul{
+    list-style: none;
+}
+
+.divs_footer ul li img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.divs_footer a, .divs_footer a img{
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    width: 18px;
+}
+
+footer .topo_pagina{
+    height: 30px;
+    border-radius: 50px;
+    background-color: #ffffff;
+}
+
+footer .topo_pagina span{
+    font-size: 30px;
+    color: #000000;
+}
+
+footer .copyright{
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+}

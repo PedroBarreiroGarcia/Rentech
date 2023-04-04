@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LouerTech- Cadastro</title>
+    <link rel="shortcut icon" href="../assets/LOGO-LouerTech-versaoprincipal.png" type="image/x-icon">
+    <link rel="stylesheet" href="cadastro.css" type="text/css" >
+</head>
+<body>
+    <main>
+        <form>
+           <a href="../home/home.html" style="background-color: transparent; border: none; box-shadow: none ;"><img src="../assets/LOGO-LouerTech-versaoprincipal.png" alt="Logo LouerTech"> </a>
+            <h2>Cadastro</h2>
+                <div class="inputs">
+                    <input id="nome" type="text" name="nome" maxlength="50" size="50" placeholder="Nome:" >
+                    <input id="nome" type="text" name="nome" maxlength="50" size="50" placeholder="Sobrenome:" >
+                </div>
+
+                <input id="e-mail" type="email" name="mail"
+                maxlength="50" size="50" placeholder="Seu e-mail:" >
+
+                <input id="Número" type="tel" name="numero" maxlength="50" size="50" placeholder="Número de telefone:" > 
+
+                <input id="instituicao" type="text" name="instituiçao" maxlength="50" size="50" placeholder="Instituição:" >
+
+                <input id="senha" type="password" name="senha" maxlength="50" size="50" placeholder="Senha:" > 
+
+                <input id="Confirmar" type="password" name="confirmar" maxlength="50" size="50" placeholder="Confirmar senha:" > 
+
+                <input id="text" type="text" name="" id="" placeholder="Detalhe o seu evento:" >
+
+                <input type="date" name="" id="">
+                
+                <div class="sim">
+                    <input id="sim" type="checkbox" name="opcao" value="fire" >
+                    <p>Eu concordo com os <span>Termos de Serviço</span> e <span>Política de Privacidade</span></p>
+                </div>
+
+                <a href="#"><button>Criar conta </button></a>     
+        </form>
+    </main>
+
+    <div class="janela_modal">
+        <div class="modal">
+            <div class="close">X</div>
+            <div class="texto_modal">
+                <p>Cadastro realizado com sucesso!</p>
+            </div>
+            <div class="button_modal">
+                <button>OK</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+let button= document.querySelector("button");
+
+button.addEventListener("click", function(){
+    let modal= document.querySelector(".modal");
+    let janela= document.querySelector(".janela_modal");
+
+    modal.style.visibility="visible";
+    janela.style.visibility="visible";
+})
+
+let fechar= document.querySelector(".close");
+let button_fechar= document.querySelector(".button_modal");
+
+fechar.addEventListener("click", function(){
+    let modal= document.querySelector(".modal");
+    let janela= document.querySelector(".janela_modal");
+
+    modal.style.visibility="hidden";
+    janela.style.visibility="hidden";
+})
+
+button_fechar.addEventListener("click", function(){
+    let modal= document.querySelector(".modal");
+    let janela= document.querySelector(".janela_modal");
+
+    modal.style.visibility="hidden";
+    janela.style.visibility="hidden";
+})
+</script>
+</html>

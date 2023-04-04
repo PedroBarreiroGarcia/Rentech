@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:#D9D9D9;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+img{
+    width: 175px;
+    height: 150px; 
+    margin-top:10px;
+}
+
+form{
+    width:50%;
+    height: 90%;
+    margin: 100px;
+    background-color: #FFFFFF;
+    border-radius: 20px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.inputs{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+}
+
+div.inputs input{
+    width: 45%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+input{
+    width: 85%;
+    height: 40px;
+    background: #ffff;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 35px;
+    color: #000; 
+    padding-left: 5px; 
+    margin-top: 12px;
+}
+
+input:focus{
+    outline: none;
+    border-bottom-width: 2px;
+    border-bottom-color: #000;
+}
+
+#sim{
+    box-shadow: none;
+    height: 20px;
+    width: 20px;
+    line-height: normal;
+    color: #000; 
+    padding-left: 0; 
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+.sim{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+}
+
+.sim p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: normal;
+    text-align: center;
+}
+
+.sim p span{
+    color: #0071d3;
+    cursor: pointer;
+}
+
+.sim p span:hover{
+    text-decoration: underline;
+}
+
+#text{
+    height: 100px;
+}
+
+a{
+    background-color: #0071d3;
+    border: 2px solid #0071d3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    width: 50%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 35px;
+    margin: 10px;
+}
+
+a button{
+    background-color: #0071d3;
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.janela_modal{
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(162, 162, 162,0.6);
+    visibility: hidden;
+}
+
+@keyframes animacion{
+    from{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    to{
+        opacity: 1;
+        width: 500px;
+        height: 220px;
+    }
+}
+
+.modal{
+    width: 500px;
+    height: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-delay: -1s;
+}
+
+.close{
+    width: 30px;
+    height: 30px;
+    border-radius: 0 10px 0 0;
+    background-color: red;
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+
+.texto_modal{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.texto_modal p{
+    font-size: 30px;
+}
+
+.button_modal{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.modal button{
+    background-color: #0071d3;
+    border: none;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
